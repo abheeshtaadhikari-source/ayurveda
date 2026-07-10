@@ -72,16 +72,14 @@ function App() {
 
               <div className="content">
                 <span className="badge">
-                  <FaLeaf />
-                  Herbal Medicine
+                  <FaLeaf /> Herbal Medicine
                 </span>
 
                 <h2>{data.name.toUpperCase()}</h2>
 
                 <div className="section">
-                  <h3>
-                    <FaHeartbeat />
-                    Uses
+                  <br /><h3>
+                    <FaHeartbeat /> Uses
                   </h3>
 
                   <ul>
@@ -92,9 +90,8 @@ function App() {
                 </div>
 
                 <div className="section">
-                  <h3>
-                    <FaCheckCircle />
-                    Benifits
+                  <br /><h3>
+                    <FaCheckCircle /> Benifits
                   </h3>
 
                   <ul>
