@@ -217,6 +217,10 @@ body {
   font-weight: 700;
 }
 
+content {
+  margin-left: 30px;
+}
+
 .content h2 {
   font-size: 35px;
   margin-bottom: 30px;
