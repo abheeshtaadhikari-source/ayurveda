@@ -226,6 +226,11 @@ body {
   margin-bottom: 35px;
 }
 
+.section .icon {
+  margin-top: 7px;
+  font-size: 20px;
+}
+
 .section h3 {
   display: flex;
   gap: 15px;
