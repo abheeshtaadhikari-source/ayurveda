@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 let ayurvedhas = [
@@ -132,12 +134,12 @@ app.get('/', (request, response) => {
 });
 
 app.get('/:name', (request, response) => {
-    let name = request.params.name;
-    let ayurvedha = ayurvedhas.find((item) => item.name === name);
+    let name = request.params.name.toLowerCase();
+    let ayurvedha = ayurvedhas.find((item) => item.name.toLowerCase() === name);
     if (ayurvedha) {
-        response.json(ayurvedha);
+        return response.json(ayurvedha);
     }
-    response.json({ "Message": "Medicine not found" });
+    return response.json({ "Message": "Medicine not found" });
 });
 
 app.listen(3000, () => {
