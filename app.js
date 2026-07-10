@@ -137,7 +137,7 @@ app.get('/:name', (request, response) => {
     if (ayurvedha) {
         response.json(ayurvedha);
     }
-    response.json({ "Message": "not found" });
+    response.json({ "Message": "Medicine not found" });
 });
 
 app.listen(3000, () => {

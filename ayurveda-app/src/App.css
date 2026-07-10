@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  z-index: -3;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: #00ffbf;
+  opacity: 0.3;
+  border-radius: 50%;
+  top: -180px;
+  left: -180px;
+  animation: float1 10s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(60px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #7b61ff;
+  border-radius: 50%;
+  right: -180px;
+  bottom: -180px;
+  opacity: 0.3;
+  animation: float2 10s ease-in-out infinite;
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-60px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.glass {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  padding: 45px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.glass h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.searchBox {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.searchBox input {
+  flex: 1;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 60px;
+  font-size: 20px;
+  transition: .3s;
+}
+
+.searchBox input::placeholder {
+  color: #005c12;
+}
+
+.searchBox button {
+  border: none;
+  font-size: 20px;
+  border-radius: 60px;
+  padding: 18px 35px;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  background: #00ffbf;
+}
+
+.searchBox button:hover {
+  background: #7b61ff;
+  color: black;
+}
