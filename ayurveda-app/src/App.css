@@ -257,3 +257,100 @@ body {
 .section li::marker {
   color: #00ffc8;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .card {
+    grid-template-columns: 1fr; /* Stack layout vertically */
+  }
+
+  .card img {
+    height: 350px; /* Cap image height when stacked */
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 20px 10px;
+  }
+
+  .glass {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .glass h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .searchBox {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .searchBox input {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+  }
+
+  .searchBox button {
+    padding: 15px 25px;
+    font-size: 18px;
+    justify-content: center;
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .loading .spin {
+    font-size: 40px;
+  }
+
+  .loading p {
+    font-size: 16px;
+  }
+
+  .error {
+    font-size: 22px;
+  }
+
+  .card {
+    margin-top: 30px;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  .content {
+    padding: 25px 20px;
+    margin-right: 0;
+  }
+
+  .badge {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    margin-bottom: 25px;
+  }
+
+  .section h3 {
+    font-size: 20px;
+  }
+
+  .section ul {
+    font-size: 16px;
+  }
+}
