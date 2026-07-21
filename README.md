@@ -47,7 +47,7 @@ Make sure you have Node.js and npm installed on your local machine.
   node app.js
   ```
 
---
+---
 
 ##🌐 Deployment
 This project is deployed using Vercel. Any commits pushed to the main branch automatically trigger a deployment to the live URL.
