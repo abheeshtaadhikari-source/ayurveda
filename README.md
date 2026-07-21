@@ -45,7 +45,12 @@ Make sure you have Node.js and npm installed on your local machine.
 3. **Run locally:**
   ```bash
   node app.js
-  ```
+```
+  or
+  
+  ```bash
+  nodemon app.js
+```
 
 ---
 
