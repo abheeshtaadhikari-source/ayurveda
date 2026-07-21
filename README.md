@@ -10,7 +10,9 @@ Live Demo: [ayurveda-t18n.vercel.app](https://ayurveda-t18n.vercel.app/)
 
 * **Interactive Interface:** Built using modular HTML, CSS, and modern JavaScript routines.
 * **Vercel Deployment:** Configured for seamless deployment and fast edge loading via Vercel (`vercel.json`).
-* **Modular Structure:** Organised application logic in `app.js` and dedicated app directory (`ayurveda-app`).
+* **Modular Structure:** Organised application logic in `app.js` and dedicated app directory (`ayurveda-app`). It has built-in 20 Ayurvedic medicines that can be searched in the website to get the details.
+  
+* The first React app to be worked and deployed as an activity done during the MERN internship
 
 ---
 
@@ -44,5 +46,7 @@ Make sure you have Node.js and npm installed on your local machine.
   node app.js
   ```
 
-🌐 Deployment
+--
+
+##🌐 Deployment
 This project is deployed using Vercel. Any commits pushed to the main branch automatically trigger a deployment to the live URL.
